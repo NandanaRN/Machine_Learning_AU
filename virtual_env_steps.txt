@@ -1,0 +1,28 @@
+VIRTUAL ENVIRONMENT SETUP AND ACTIVATION (WINDOWS – POWERSHELL)
+
+STEP 1: Open PowerShell and go to project folder
+cd C:\Users\nanda\Documents\AU\ML
+
+
+STEP 2: Create a virtual environment
+python -m venv env
+
+
+STEP 3: Allow PowerShell to run scripts (one-time setup)
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+
+STEP 4: Activate the virtual environment
+.\env\Scripts\Activate.ps1
+
+
+STEP 5: Verify activation
+(env) will appear before the folder path in terminal
+
+
+STEP 6: Deactivate the virtual environment (when done)
+deactivate
+
+NOTE:
+A virtual environment is used to isolate project-specific Python packages.
+This helps avoid conflicts between different projects.
